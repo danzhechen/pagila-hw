@@ -18,4 +18,4 @@ jobs:
         sleep 20
 
         # run the tests
-        docker-compose exec pg ./check_answers.sh
+        docker-compose exec -T pg ./check_answers.sh
