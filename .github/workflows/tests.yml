@@ -16,5 +16,6 @@ jobs:
         docker-compose up -d --build
         docker ps -a
         sleep 20
-        docker exec pagila-hw_pg_1 ./check_answers.sh
-        #docker-compose exec pg ./check_answers.sh
+
+        # run the tests
+        docker-compose exec pg ./fixme.sh
